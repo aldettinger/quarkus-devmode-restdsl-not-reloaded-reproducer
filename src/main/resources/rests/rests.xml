@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rests xmlns="http://camel.apache.org/schema/spring">
+    <rest id="step-service" path="/">
+        <get uri="/steps">
+            <route id="rest-route">
+                <setBody><constant>STEP 12</constant></setBody>
+            </route>
+        </get>
+    </rest>
+</rests>
